@@ -2,6 +2,7 @@
 $username="root";
 $password="";
 $host="localhost";
-$database="dati_sito";
+$database="db_sito";
 
-$filepath="\.";
+$file_path="\\documenti\\";
+$file_ext=array("pdf", "doc", "docx", "xls", "xlsx", "pdf");
