@@ -35,6 +35,7 @@
             echo "<p>Nome: " . $row['nome'] . "</p>";
             echo "<p>Cognome: " . $row['cognome'] . "</p>";
             echo "<p>Telefono: " . $row['telefono'] . "</p>";
+            echo "<p><a href='carica_documento.php?id=" . $row['id'] . "'>Carica Documento</a></p>";
         } else {
             echo "Nessun risultato trovato per questo ID";
         }

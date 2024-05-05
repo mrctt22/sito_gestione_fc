@@ -21,16 +21,17 @@
 		// Taking all values from the form data(input)
 		$nome = $_REQUEST['nome'];
 		$cognome = $_REQUEST['cognome'];
+		$indirizzo = $_REQUEST['indirizzo'];
 		$telefono = $_REQUEST['telefono'];
 
 		// Performing insert query execution
 		$sql = "INSERT INTO cliente VALUES (null, '$nome', 
-			'$cognome','$telefono')";
+			'$cognome','$indirizzo','$telefono')";
 
 		if (mysqli_query($conn, $sql)) {
 			echo "<h3>Nuovo cliente salvato con successo!</h3>";
 
-			echo nl2br("\n$nome\n $cognome\n $telefono");
+			echo nl2br("\n$nome\n $cognome\n $indirizzo\n $telefono");
 		} else {
 			echo "ERROR: Hush! Sorry $sql. "
 				. mysqli_error($conn);

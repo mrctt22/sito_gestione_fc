@@ -23,6 +23,12 @@
 			</p>
 
 			<p>
+				<label for="indirizzo">Indirizzo:</label>
+				<br>
+				<input type="text" name="indirizzo" id="indirizzo">
+			</p>
+
+			<p>
 				<label for="telefono">Telefono:</label>
 				<br>
 				<input type="text" name="telefono" id="telefono">
